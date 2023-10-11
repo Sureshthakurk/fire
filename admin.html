@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/admin.js" type="module"></script>
 </head>
-<body>
-    <h1>Welcome admin</h1>
-    <button id="logout">Logout</button>
+<body class="p-4">
+    <h1>Welcome <span id="admin-name">admin</span></h1>
+    <button id="logout" class="btn bg-rose-500 text-white rounded px-6 py-2 float-right">Logout</button>
 </body>
 </html>

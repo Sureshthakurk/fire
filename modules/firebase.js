@@ -2,14 +2,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebas
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDsv-4pqhdeQGsUbX6QLgAlaVj0ykkBV7E",
-  authDomain: "fire-dd524.firebaseapp.com",
-  projectId: "fire-dd524",
-  storageBucket: "fire-dd524.appspot.com",
-  messagingSenderId: "371394472939",
-  appId: "1:371394472939:web:1ecc8b159dc2a3c40d87ae",
-  measurementId: "G-NMLSX4N9KL"
-};
+    apiKey: "AIzaSyCcSjNC71G_CXbkiYqNrNS2f3FdzeOo6MI",
+    authDomain: "fire-39df1.firebaseapp.com",
+    projectId: "fire-39df1",
+    storageBucket: "fire-39df1.appspot.com",
+    messagingSenderId: "1042513456565",
+    appId: "1:1042513456565:web:6e1d08cdd3a57beda57dfc",
+    measurementId: "G-VYG664Z795"
+  };
 
 initializeApp(firebaseConfig);
 const auth = getAuth()

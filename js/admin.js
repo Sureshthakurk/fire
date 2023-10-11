@@ -6,8 +6,10 @@ guard("login.html")
 
 // Selectors
 const logoutBtn = document.querySelector("#logout")
+const adminName = document.querySelector("#admin-name")
 
 // Functions
+adminName.innerHTML = user.email
 logoutBtn.onclick = async ()=>{
     await logout()
 }

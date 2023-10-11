@@ -6,6 +6,7 @@ import { signin } from "../modules/firebase.js"
 const loginForm = document.querySelector("#login-form")
 const result = document.querySelector("#result")
 
+
 // Functions
 loginForm.onsubmit = async (e)=>{
     e.preventDefault()
@@ -15,6 +16,7 @@ loginForm.onsubmit = async (e)=>{
     }
     const {success} = await signin(user)
     if(success) return location.href = "admin.html"
+    
 
     result.style.color = "red"
     result.innerHTML = "Invalid credentials !"
