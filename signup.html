@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
   <script src="js/signup.js" type="module"></script>
 </head>
 <body>
@@ -17,10 +19,13 @@
 
         <div class="flex flex-col gap-1">
           <label class="text-zinc-600 font-semibold">Password</label>
-          <input required type="password" class="rounded border p-2" placeholder="*********" />
+          <input required type="password" id="password-field" class="rounded border p-2" placeholder="*********" />
         </div>
-
-        <button class="w-fit bg-blue-500 text-white font-semibold px-6 py-2 rounded">Register</button>
+        <div class="flex gap-2">
+          <i class="fa fa-spinner fa-spin text-xl hidden" id="loader"></i>
+          <button type="button" class="w-fit text-zinc-500" id="generate-password">Generate Strong Password</button>
+        </div>
+        <button type="submit" class="w-fit bg-blue-500 text-white font-semibold px-6 py-2 rounded">Register</button>
         <p id="result"></p>
         <p id="new-user">Already Registered? <a href="login.html" class="text-blue">Login Now</a></p>
       </form>
